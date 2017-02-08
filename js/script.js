@@ -49,7 +49,9 @@ var products = [
   }
 ]
 
+//loop to print out name, description and price for each object to the console
 for (var key in products) {
   console.log("Name: " + products[key].name);
+  console.log("Description: " + products[key].description);
   console.log("Price: $" + products[key].price);
 }
