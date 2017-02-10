@@ -49,9 +49,10 @@ var products = [
   }
 ]
 
-//loop to print out name, description and price for each object to the console
-for (var key in products) {
-  console.log("Name: " + products[key].name);
-  console.log("Description: " + products[key].description);
-  console.log("Price: $" + products[key].price);
+// loop to print out name, description and price for each object to the console
+// note that this is the syntax for looping through arrays; for...in loops are specifically for looping through objects
+for (var i = 0; i < products.length; i++) {
+  console.log("Name: " + products[i].name);
+  console.log("Description: " + products[i].description);
+  console.log("Price: $" + products[i].price);
 }
