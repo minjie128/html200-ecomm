@@ -56,3 +56,9 @@ for (var i = 0; i < products.length; i++) {
   console.log("Description: " + products[i].description);
   console.log("Price: $" + products[i].price);
 }
+
+// a form handler function to be triggered on form submit, printing out the value of the form element with name "filter"
+function capture() {
+  console.log("Filter by: " + document.filterBy.filter.value);
+  event.preventDefault();
+}
