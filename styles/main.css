@@ -10,11 +10,31 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  text-align: center;
+  margin: 1rem 0 0 0;
+  font-size: 1.5rem;
+}
+
+h1 img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+h1 a {
+  color: #263248;
+}
+
+h1 a:hover {
+  color: #263248;
+  text-decoration: none;
+}
+
 nav {
-  background-color: #3D7FCF;
-  color: white;
-  padding: 0.5rem;
+  padding: 2rem 0 1.5rem 0;
   font-weight: 600;
+  color: #7E8AA2;
 }
 
 nav ul {
@@ -23,89 +43,66 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #7E8AA2;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: white;
-}
-
-header img {
-  margin: 1rem 1rem 0 1rem;
-  float: left;
-}
-
-h1 {
-  color: #3D7FCF;
-  font-size: 2rem;
-  margin-top: 2rem;
-  line-height: 2.5rem;
-  max-width: 20rem;
-}
-
-h1 a:hover {
+  color: #263248;
   text-decoration: none;
 }
 
-.container {
-  clear: both;
-  margin: 0 1rem;
-}
-
-aside {
-  margin-top: 2.5rem;
+.bg-scarves {
+  width: 100%;
+  min-height: 12rem;
   margin-bottom: 1rem;
-}
-
-.filter-by {
-  width: 100%;
-}
-
-select {
-  border-color: #3D7FCF;
-  color: #3D7FCF;
-  margin: 0.2rem;
-  padding: 2px;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 0.8rem;
-  height: 1.6rem;
-}
-
-button[type=submit] {
-  margin: 0.2rem;
-  padding-top: 0.1rem;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 0.8rem;
-  height: 1.6rem;
 }
 
 h2 {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 800;
+  margin: 0.3rem 0 1rem 0;
+  color: #7E8AA2;
+}
+
+select {
+  margin: 0.2rem 0;
+  padding: 2px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+button[type=submit] {
+  margin: 0.2rem 0;
+  border-radius: 5px;
+  width: 5rem;
+  font-size: 0.8rem;
 }
 
 .item-container {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .item {
-  margin: 1rem;
-  padding: 1rem;
-  border: solid 1px black;
+  margin: 0;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .item img {
   width: 100%;
+  height: 65%;
 }
 
 h3 {
   margin-bottom: 1rem;
-  text-align: center;
   font-weight: 600;
+  color: #263248;
 }
 
+.item p {
+  color: #7E8AA2;
+  line-height: 1.3rem;
+}
