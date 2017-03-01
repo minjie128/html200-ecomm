@@ -31,23 +31,23 @@ h1 a:hover {
   text-decoration: none;
 }
 
-nav {
+header nav {
   padding: 2rem 0 1.5rem 0;
   font-weight: 600;
   color: #7E8AA2;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   justify-content: space-around;
 }
 
-nav a {
+header nav a {
   color: #7E8AA2;
   text-decoration: none;
 }
 
-nav a:hover {
+header nav a:hover {
   color: #263248;
   text-decoration: none;
 }
@@ -106,3 +106,26 @@ h3 {
   color: #7E8AA2;
   line-height: 1.3rem;
 }
+
+footer {
+  text-align: center;
+  background-color: #FFD34E;
+  color: #263248;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer nav {
+  padding: 1rem;
+}
+
+footer nav a {
+  color: #7E8AA2;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: #263248;
+  text-decoration: none;
+}
+
