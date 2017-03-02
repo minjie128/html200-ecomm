@@ -33,7 +33,7 @@ h1 a:hover {
 
 header nav {
   padding: 2rem 0 1.5rem 0;
-  font-weight: 600;
+  font-weight: 300;
   color: #7E8AA2;
 }
 
@@ -74,6 +74,16 @@ header nav a:hover {
   header nav a:hover {
     color: #EB7F00;
   }  
+}
+
+a:focus, a:hover {
+  color: #EB7F00;
+  text-decoration: none;
+}
+
+.nav-active {
+  color: #EB7F00;
+  font-weight: 800;
 }
 
 .bg-scarves {
@@ -180,3 +190,8 @@ footer nav a:hover {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 600px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}
