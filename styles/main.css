@@ -52,10 +52,40 @@ header nav a:hover {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 600px) {
+  header nav {
+    background-color: #225378;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+  }  
+  
+  header nav a {
+    color: white;
+  }
+
+  header nav a:hover {
+    color: #EB7F00;
+  }  
+}
+
 .bg-scarves {
   width: 100%;
   min-height: 12rem;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-scarves {
+    display: none;
+  }
 }
 
 h2 {
@@ -78,6 +108,27 @@ button[type=submit] {
   border-radius: 5px;
   width: 5rem;
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  section aside {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .filter-by {
+    display: block;
+  }
+  button[type=submit] {
+    width: 12rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  button[type=submit] {
+    width: 16rem;
+  }
 }
 
 .item-container {
