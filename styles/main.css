@@ -118,6 +118,13 @@ button[type=submit] {
   border-radius: 5px;
   width: 5rem;
   font-size: 0.8rem;
+  background-color: #225378;
+  border: 1px solid #225378;
+}
+
+button[type=submit]:hover {
+  background-color: #263248;
+  border: 1px solid #263248;    
 }
 
 @media only screen and (max-width: 768px) {
@@ -166,6 +173,36 @@ h3 {
 .item p {
   color: #7E8AA2;
   line-height: 1.3rem;
+}
+
+.addBtn {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #225378;
+  border: 1px solid #225378;
+  border-radius: 5px;
+}
+
+.addBtn:hover {
+  background-color: #263248;
+  border: 1px solid #263248;  
+}
+
+.removeBtn {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #7E8AA2;
+  background-color: white;
+  border: 1px solid #7E8AA2;
+  border-radius: 5px;  
+}
+
+.removeBtn:hover {
+  color: #263248;
+  border: 1px solid #263248;  
 }
 
 footer {
