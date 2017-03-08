@@ -57,12 +57,6 @@ for (var i = 0; i < products.length; i++) {
   console.log("Price: $" + products[i].price);
 }
 
-// a form handler function to be triggered on form submit, printing out the value of the form element with name "filter"
-function capture() {
-  console.log("Filter by: " + document.filterBy.filter.value);
-  event.preventDefault();
-}
-
 //TODO: trigger on change of cart contents
 function sumPrices(cartArray) {
   // for loop through array, sum value of price attribute for each object
@@ -75,6 +69,41 @@ function sumPrices(cartArray) {
   // TODO: print total as HTML to page, next to cart icon
   console.log(total);
 }
+
+// add or remove items from cart
+var cart = [];
+
+function addItem() {
+  
+}
+
+function removeItem () {
+  
+}
+
+function sortByPrice(a, b) {
+  return a.price - b.price;  
+}
+
+function sortByName(a, b) {
+  return a.name.toLowerCase() > b.name.toLowerCase();
+}
+
+function sortProducts() {
+  var sortBy = document.filterBy.filter.value;
+  console.log("The items are filtered by " + sortBy + ".");
+  if (sortBy == "price") {
+    console.log("Sorted with price: ", products.sort(sortByPrice));
+  } else if (sortBy == "name") {
+    console.log("Sorted with name: ", products.sort(sortByName));
+  } else if (sortBy == "default") {
+    console.log("Please select a filter criteria option.")
+  }
+  event.preventDefault();  
+}
+
+
+
 
 
 
