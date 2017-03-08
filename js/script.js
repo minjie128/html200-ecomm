@@ -73,12 +73,20 @@ function sumPrices(cartArray) {
 // add or remove items from cart
 var cart = [];
 
-function addItem() {
-  
+function addItem(productName) {
+  var index = cart.indexOf(productName);
+  if (index < 0) {
+    cart.push(productName);
+  }
+  console.log("Items in your cart: ", cart);
 }
 
-function removeItem () {
-  
+function removeItem (productName) {
+  var index = cart.indexOf(productName);
+  if (index >= 0) {
+    cart.splice(index, 1);
+  }
+  console.log("Items in your cart: ", cart);
 }
 
 function sortByPrice(a, b) {
