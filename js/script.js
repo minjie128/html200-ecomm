@@ -78,7 +78,7 @@ function addItem(productName) {
   if (index < 0) {
     cart.push(productName);
   }
-  console.log("Items in your cart: ", cart);
+  console.log("You have " + cart.length + " items in your cart: " + cart);
 }
 
 function removeItem (productName) {
@@ -86,9 +86,14 @@ function removeItem (productName) {
   if (index >= 0) {
     cart.splice(index, 1);
   }
-  console.log("Items in your cart: ", cart);
+  if (cart.length == 0) {
+    console.log("Your cart is empty!");
+  } else {
+    console.log("You have " + cart.length + " items in your cart: " + cart);
+  }
 }
 
+// sort items by selected attribute
 function sortByPrice(a, b) {
   return a.price - b.price;  
 }
