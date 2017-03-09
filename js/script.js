@@ -78,7 +78,11 @@ function addItem(productName) {
   if (index < 0) {
     cart.push(productName);
   }
-  console.log("You have " + cart.length + " items in your cart: " + cart);
+  if (cart.length == 1) {
+    console.log("You have " + cart.length + " item in your cart: " + cart);    
+  } else {
+    console.log("You have " + cart.length + " items in your cart: " + cart);    
+  }
 }
 
 function removeItem (productName) {
@@ -88,6 +92,8 @@ function removeItem (productName) {
   }
   if (cart.length == 0) {
     console.log("Your cart is empty!");
+  } else if (cart.length == 1) {
+    console.log("You have " + cart.length + " item in your cart: " + cart);    
   } else {
     console.log("You have " + cart.length + " items in your cart: " + cart);
   }
