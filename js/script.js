@@ -75,28 +75,26 @@ var cart = [];
 
 function addItem(productName) {
   var index = cart.indexOf(productName);
+  var numberOfItems = document.getElementById('numberOfItems');
   if (index < 0) {
     cart.push(productName);
   }
-  if (cart.length == 1) {
-    console.log("You have " + cart.length + " item in your cart: " + cart);    
-  } else {
-    console.log("You have " + cart.length + " items in your cart: " + cart);    
-  }
+  numberOfItems.innerHTML = '(' + cart.length + ')';
+  console.log("Item(s) in your cart: " + cart);
 }
 
 function removeItem (productName) {
   var index = cart.indexOf(productName);
+  var numberOfItems = document.getElementById('numberOfItems');
   if (index >= 0) {
     cart.splice(index, 1);
   }
   if (cart.length == 0) {
     console.log("Your cart is empty!");
-  } else if (cart.length == 1) {
-    console.log("You have " + cart.length + " item in your cart: " + cart);    
   } else {
-    console.log("You have " + cart.length + " items in your cart: " + cart);
+    console.log("Item(s) in your cart: " + cart);
   }
+  numberOfItems.innerHTML = '(' + cart.length + ')';
 }
 
 // sort items by selected attribute
